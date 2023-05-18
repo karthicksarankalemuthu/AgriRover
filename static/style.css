@@ -1,0 +1,200 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color:#fff!important;
+}
+#title{
+   
+    margin-top: 20px !important;
+    margin-left:370px !important;
+    font-weight: 700 !important;
+    color:#FF5161 !important;
+}
+#screen{
+    width: 500px;
+    height: 250px;
+    background-color: #E7E9F6;
+    margin-left: 20%;
+    border-radius: 30px;
+}
+#h{
+    display:flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+#first{
+    margin-right: 250px;
+   
+    
+}
+
+#thired{
+    margin-left: 200px;
+   
+}
+#forword-div ,#backword-div,#leftright-div,#stop,#right-div{
+    width: 40px ;
+    height: 40px ;
+    text-decoration: none !important;
+    background-color: #E7E9F6 !important;
+    color: #FF5161 !important;
+    border-radius: 50%;
+}
+#forword-div a,#backword-div a,#stop a,#leftright-div a,#right-div a{
+    display:flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+#center{
+    display: inline-block;
+    margin-right: 30px;
+   
+}
+#leftright-div{
+    margin-left:70px;
+}
+#right-div {
+    position: fixed;
+    left: 325px;
+    top: 400px;
+}
+i{
+    font-weight:800;
+}
+#stop{
+    position: fixed;
+    left: 400px;
+    top: 400px;
+}
+#forword-div{
+    margin-bottom: 15px;
+
+}
+#backword-div{
+    margin-bottom: 17px;
+
+}
+
+.slidecontainer {
+    width: 100%; 
+  }
+  
+  /* The slider */
+  .slider {
+    -webkit-appearance: none;  
+    appearance: none;
+    width: 100%; 
+    height: 15px; 
+    border-radius: 30px;
+    background: #d3d3d3; 
+    outline: none; 
+    opacity: 1; 
+    -webkit-transition: .2s; 
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 25px; 
+    height: 25px; 
+    border-radius: 50%;
+    background: #FF5161; 
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; 
+    height: 25px; 
+    border-radius: 50%;
+    background: green; 
+    cursor: pointer; 
+  }
+  #card{
+    width: 300px;
+    height:170px ;
+    background-color: #E7E9F6;
+    border-radius: 30px;
+    text-align: center; 
+  }
+  #card-title{
+   
+    color: #FF5161;
+    font-weight: 900;
+  }
+  #card-sub{
+    color: #769fe5 ;
+    font-weight: 500;
+  }
+ #check-btn{
+    width: 500px;
+    height: 35px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration:none;
+    color:#FF5161;
+ }
+ @media only screen and (max-width:600px){
+    
+#title{
+   
+    margin-top: 20px !important;
+    margin-left:130px !important;
+    font-weight: 500 !important;
+    color:#FF5161 !important;
+}
+#screen{
+    width: 300px;
+    height: 150px;
+    background-color: #E7E9F6;
+    margin-left: 15%;
+    border-radius: 10px;
+}
+#h{
+    display:block;
+    margin-left: 20px;
+   align-items: center;
+   justify-content: center;
+}
+#first{
+    margin-right: 100px;
+   
+}
+#secound{
+    margin-left: 160px;
+    margin-top: 30px;
+}
+#right-div {
+    position: fixed;
+    left: 100px;
+    top: 380px;
+}
+#stop{
+    position: fixed;
+    left: 180px;
+    top: 380px;
+}
+#thired{
+    margin-top: 30px;
+    margin-left: 30px;
+   
+}
+#card{
+    width: 300px;
+    height:170px ;
+    background-color: #E7E9F6;
+    border-radius: 30px;
+    text-align: center; 
+  }
+ }

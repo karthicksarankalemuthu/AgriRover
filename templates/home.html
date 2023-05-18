@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="containar">
+
+        <div class="row">
+            <h1 id="title">Agri Rover</h1>
+        </div>
+
+        <div class="row">
+            <img src="{{ url_for('streaming') }}" id="screen"/>
+    
+        </div>
+
+        <div id="h">
+
+        <div id="first">
+          <div class="slidecontainer">
+            <input type="range" min="1" max="90" value="1" class="slider" id="moter1"></br>
+           <!-- <input type="range" min="1" max="90" value="1" class="slider" id="moter2">-->
+          </div>
+          </div>
+
+          <div  id="secound">
+         <div id="forword-div">
+          <a href="/forword"> <i class="fa-solid fa-chevron-up"></i></a>
+           
+         </div>
+         
+         <div id="center">
+         <div id="leftright-div">
+          <a href="/right"><i class="fa-solid fa-chevron-right"></i></a>
+         
+          </div>
+          <div id="stop">
+              <a href="/stop"><i class="fa-sharp fa-regular fa-circle-stop"></i></a>
+          </div>
+          <div id="right-div">
+            <a href="/left"><i class="fa-solid fa-chevron-left"></i></a>
+          </div> 
+           
+        </div>
+
+         <div id="backword-div">
+       <a href="/backword"><i class="fa-solid fa-chevron-down"></i></a>
+         </div>
+          </div>
+
+          <div id="thired">
+            <div id="card">
+             <p id="card-title">Soil moisture</p>
+             <p id="card-sub">soil is wet</p>
+             <p id="card-title">Plant Disease</p>
+             <a  href="/predict"id="check-btn">check</a>
+             {% if prediction %}
+             <p id="card-sub">{{prediction}}</p>
+             <p id="card-sub">acc:{{accrency}}%</p>
+             {% else %}
+             <p id="card-sub">Disease</p>
+             {% endif %}
+             
+            </div>
+         </div>
+
+        </div>
+
+          </div>
+          <script defer src="{{url_for('static',filename='script.js')}}"></script>
+          </body>
+          </html>
